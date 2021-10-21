@@ -16,8 +16,8 @@
     "mysql2": "^2.3.0",
     "nodemon": "^2.0.14",
     "prompt": "^1.2.0",
-    "sequelize": "^6.6.5",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
