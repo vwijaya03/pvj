@@ -24,7 +24,6 @@
     "@babel/core": "^7.15.8",
     "@babel/node": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "babel-plugin-root-import": "^6.6.0",
     "jest": "^27.2.1"
   }
 }
