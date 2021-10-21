@@ -1,0 +1,27 @@
+{
+  "name": "pvj",
+  "version": "1.0.0",
+  "description": "Test Staff Task PVJ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "app": "nodemon --exec babel-node server.js"
+  },
+  "author": "Viko Wijaya",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-root-import": "^6.6.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.14",
+    "prompt": "^1.2.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^27.2.1"
+  }
+}
