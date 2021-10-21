@@ -28,8 +28,13 @@ async function addStaff({fullname=null, phone=null, email=null}={}) {
     return await Staff.create(data);
 }
 
+async function deleteStaff({id=null}={}) {
+    return await Staff.destroy({ where: { id } });
+}
+
 const obj = {};
 obj.getStaff = getStaff;
 obj.addStaff = addStaff;
+obj.deleteStaff = deleteStaff;
 
 export default obj

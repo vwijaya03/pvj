@@ -18,16 +18,12 @@ app.get(prefix + '/test', function (req, res, next) {
 
 app.get(prefix + '/staff', staffController.getStaff);
 app.post(prefix + '/staff', staffController.addStaff);
-// app.delete(prefix + '/staff/:id', staffHandler.deleteData);
+app.delete(prefix + '/staff', staffController.deleteStaff);
 
 
 app.use(function onError(err, req, res, next) {
-  res.status(500).send({
-      error: true,
-      message: err.message,
-    })
-    .end();
-  console.error(err);
+    console.error(err);
+    res.status(500).send({ code: 500, message: err.message}).end();
 });
 
-module.exports = app;
+export default app

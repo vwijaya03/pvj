@@ -1,4 +1,5 @@
-const server = require('./src/index')
+import server from './src/index'
+
 const port = 3000;
 
 server.listen(port)
