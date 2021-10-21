@@ -18,3 +18,8 @@ Additionally:
 -- implement a server (express.js) with the controller implementation
 -- complete the tasks from the additional folder
 */
+
+/*
+Run the app
+- npm run app
+*/
