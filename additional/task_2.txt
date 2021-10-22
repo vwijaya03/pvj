@@ -11,3 +11,12 @@ ENTRYPOINT ["npm"]
 CMD ["run", "prod"] 
 
 # A better option is:
+
+# My first time using docker & kubernetes
+FROM node:14
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD [ "node", "server.js" ]
